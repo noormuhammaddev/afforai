@@ -1,0 +1,18 @@
+[
+  {
+    "menuItem": "Affiliate",
+    "url": "/affiliate"
+  },
+  {
+    "menuItem": "Pricing",
+    "url": "/pricing"
+  },
+  {
+    "menuItem": "Testimonials",
+    "url": "/testimonials"
+  },
+  {
+    "menuItem": "Help Center",
+    "url": "/help-center"
+  }
+]
