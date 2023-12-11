@@ -3,6 +3,14 @@
 .page-title {
   max-width: 691px;
   margin: 32px auto;
+  text-align: center;
+
+  @media only screen and (max-width: 767px) {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 
   h1 {
     color: $dark;
@@ -10,6 +18,11 @@
     font-size: 48px;
     line-height: 130%;
     margin-bottom: 32px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 40px;
+      max-width: 343px;
+    }
   }
 
   p {

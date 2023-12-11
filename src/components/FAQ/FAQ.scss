@@ -1,0 +1,25 @@
+.accordion-block {
+  border: 1px solid rgb(230, 230, 230);
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  &:before {
+    display: none;
+  }
+
+  .css-1betqn-MuiAccordionSummary-content {
+    margin: 23px 0;
+  }
+
+  .MuiAccordionSummary-expandIconWrapper {
+    svg {
+      width: 18px;
+      height: 18px;
+      transform: rotate(90deg);
+    }
+  }
+}

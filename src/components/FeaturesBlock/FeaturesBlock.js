@@ -25,7 +25,7 @@ const FeaturesBlock = () => {
           }
         </div>
 
-        <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '30px', gap: '30px'}}>
+        <Box className="btn-wrapper">
           <LinkButton 
             variant="primary"
             label="Try for free"

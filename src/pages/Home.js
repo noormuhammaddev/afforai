@@ -110,7 +110,7 @@ const faqData = [
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="hero-section-container">
       <Box sx={{padding: '24px 0'}}>
         <DealLabel />
         <PageTitle 
@@ -146,7 +146,7 @@ const Home = () => {
         }>
         </ContainerSection>
 
-        <ContainerSection childern={
+        {/* <ContainerSection childern={
           <>
             <SectionHeading 
               align="center"
@@ -157,7 +157,7 @@ const Home = () => {
             />
           </>
         }>
-        </ContainerSection>
+        </ContainerSection> */}
 
         <ContainerSection childern={
           <>
@@ -166,6 +166,7 @@ const Home = () => {
               detail={
                 <>
                   <SectionHeading 
+                    align="center"
                     subHeading="Most versatile"
                     heading="Create multiple chatbots for different purposes"
                     paragraph="Legal documents? Summarising a book? Extracting data from a website? We allow you to create multiple chatbots at one time, so you can use Afforai for a whole range of purposes."

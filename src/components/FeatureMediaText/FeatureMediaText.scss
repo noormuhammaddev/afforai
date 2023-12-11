@@ -2,11 +2,21 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
   > div {
     flex: 1;
 
     &.media {
       padding: 0 10px;
+
+      @media only screen and (max-width: 767px) {
+        padding: 0;
+      }
 
       img {
         width: 100%;
@@ -15,15 +25,25 @@
 
     &.text {
       padding-right: 48px;
+
+      @media only screen and (max-width: 767px) {
+        padding-right: 0;
+      }
     }
   }
 
   &.left {
-    flex-direction: row-reverse;
+    @media only screen and (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
 
     .text {
       padding-right: 0;
       padding-left: 48px;
+
+      @media only screen and (max-width: 767px) {
+        padding-left: 0;
+      }
     }
   }
 }

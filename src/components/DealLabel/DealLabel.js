@@ -6,7 +6,7 @@ import cloude from '../../assets/images/appsumo.png';
 
 const DealLabel = () => {
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center'}}>
+    <Box className="label-container">
       <Box className="deal-label" sx={{display: 'flex', gap: '6px', padding: '6px 6px 6px 10px'}}>
         <img src={cloude} width="26" height="20" alt="AppSumo" />
         <span>Now on AppSumo</span>

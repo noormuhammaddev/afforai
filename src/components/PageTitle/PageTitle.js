@@ -9,9 +9,9 @@ const PageTitle = ({
   return (
     <>
       <div className="page-title">
-        <Typography align="center" variant="h1">{title}</Typography>
+        <Typography variant="h1">{title}</Typography>
         {
-          description && <Typography align="center">{description}</Typography> 
+          description && <Typography >{description}</Typography> 
         }
       </div>
     </>

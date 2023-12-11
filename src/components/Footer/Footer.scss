@@ -9,11 +9,19 @@
   display: flex;
   gap: 48px;
 
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
   .footer-about {
     width: 284px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media only screen and (max-width: 767px) {
+      width: auto;
+    }
 
     p {
       color: $grey-2;
