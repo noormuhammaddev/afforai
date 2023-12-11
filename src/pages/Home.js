@@ -28,8 +28,6 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import DP from '../assets/images/0-0.webp';
 import viewOnProduct from '../assets/images/viewOnProduct.jpg';
 import FAQ from '../components/FAQ/FAQ';
-import Footer from '../components/Footer/Footer';
-
 
 const descriptionLists = [
   {
@@ -354,8 +352,6 @@ const Home = () => {
           </>
         }>
         </ContainerSection>
-      
-        <Footer />
       </Box>
     </div>
   )
