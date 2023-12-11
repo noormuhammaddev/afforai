@@ -1,7 +1,7 @@
 import './LinkButton.scss';
 import Link from '@mui/material/Link';
 
-const LinkButton = ({variant, label, url}) => {
+const LinkButton = ({variant, label, url, size}) => {
   let buttonClass = ''; // Default class for the button
 
   // Apply different variants based on the prop passed
@@ -21,7 +21,7 @@ const LinkButton = ({variant, label, url}) => {
   }
 
   return (
-    <Link class={`btn ${buttonClass}`} href={url}>{label}</Link>
+    <Link class={`btn ${size} ${buttonClass}`} href={url}>{label}</Link>
   )
 }
 export default LinkButton;

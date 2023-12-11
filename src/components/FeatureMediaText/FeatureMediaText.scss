@@ -1,0 +1,29 @@
+.col-row {
+  display: flex;
+  align-items: center;
+
+  > div {
+    flex: 1;
+
+    &.media {
+      padding: 0 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &.text {
+      padding-right: 48px;
+    }
+  }
+
+  &.left {
+    flex-direction: row-reverse;
+
+    .text {
+      padding-right: 0;
+      padding-left: 48px;
+    }
+  }
+}

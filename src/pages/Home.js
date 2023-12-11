@@ -2,6 +2,10 @@ import Box from '@mui/system/Box';
 import DealLabel from "../components/DealLabel/DealLabel";
 import PageTitle from '../components/PageTitle/PageTitle';
 import FeaturesBlock from '../components/FeaturesBlock/FeaturesBlock';
+import ContainerSection from '../components/ContainerSection/ContainerSection';
+import FeatureMediaText from '../components/FeatureMediaText/FeatureMediaText';
+import LaptopLanding4 from '../assets/images/laptop-landing-4.png';
+import FeatureTextWithList from '../components/FeatureTextWithList/FeatureTextWithList';
 
 const Home = () => {
   return (
@@ -14,6 +18,17 @@ const Home = () => {
         />
 
         <FeaturesBlock />
+
+        <ContainerSection childern={
+          <>
+            <FeatureMediaText 
+              media={LaptopLanding4}
+              detail={<FeatureTextWithList />}
+            />
+          </>
+        }>
+          
+        </ContainerSection>
       </Box>
     </div>
   )

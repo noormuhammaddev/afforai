@@ -1,0 +1,17 @@
+.user-case {
+  margin: 100px auto 128px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    color: rgb(82, 82, 82);
+    font-size: 16px;
+
+    span {
+      color: rgb(128, 54, 255);
+    }
+  }
+}
