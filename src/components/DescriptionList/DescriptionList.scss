@@ -1,0 +1,28 @@
+.description-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  h4 {
+    font-size: 16px;
+    color: rgb(58, 2, 153);
+    font-weight: 600;
+    margin: 8px;
+
+    span {
+      padding: 0.25rem 0.5rem;
+      border-radius: 20px;
+      background: rgb(239, 230, 255);
+      color: rgb(96, 4, 255);
+      font-size: 14px;
+      margin-left: 16px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: rgb(38, 2, 102);
+  }
+  .icon {
+    padding-top: 6px;
+  }
+}

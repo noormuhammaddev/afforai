@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
-import './FeatureTextWithList.scss';
 import TickIcon from '../../assets/images/check-circle.svg';
+import './FeatureTextWithList.scss';
 
 const ListItems = [
   'A whip smart research assistant',
