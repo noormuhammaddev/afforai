@@ -25,6 +25,8 @@ import LaptopLanding18 from '../assets/images/laptop-landing-18.png';
 import LaptopLanding19 from '../assets/images/laptop-landing-19.png';
 import PhReview from '../assets/images/ph-review.webp';
 import Testimonial from '../components/Testimonial/Testimonial';
+import DP from '../assets/images/0-0.webp';
+import viewOnProduct from '../assets/images/viewOnProduct.jpg';
 
 
 const descriptionLists = [
@@ -46,6 +48,23 @@ const descriptionLists = [
     badgeText: '5 Credits',
     detail: 'Supplement your answers with the top 3 results from Google Search. This adds extra reliability to back up our already incredibly accurate answers.'
   }
+]
+
+const testimonialData = [
+  {
+    message: 'AMAZING PRODUCT!, especially for low-tech but love new tech person like me!! Used it to craft emails because I spend wayyy too much time writing.',
+    userImg: DP,
+    userName: 'Thuy Nguyen, CEO Assistance',
+    userActionImg: viewOnProduct,
+    link: 'https://www.google.com'
+  },
+  {
+    message: 'I have signed up and starting testing Afforai Ask for my next project business model, and I have had a great experience so far. It has been exactly what I needed with its fast response times. For now, I am considering purchasing the Afforai - Lite Plan.',
+    userImg: DP,
+    userName: 'Bayu Wilanda, Web & App Developer',
+    userActionImg: viewOnProduct,
+    link: 'https://www.google.com'
+  },
 ]
 
 const Home = () => {
@@ -271,10 +290,23 @@ const Home = () => {
               paragraph="Loved by thousands, all around the World"
             />
 
-            <Testimonial />
+            {
+              testimonialData.map((item, index) => (
+                <Testimonial 
+                  key={index}
+                  message = {item.message}
+                  userImg = {item.userImg}
+                  userName = {item.userName}
+                  userActionImg= {item.userActionImg}
+                  link = {item.link}
+                />
+              ))
+            }
           </>
         }>
         </ContainerSection>
+      
+      
       </Box>
     </div>
   )
