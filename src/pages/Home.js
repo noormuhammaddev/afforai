@@ -27,6 +27,8 @@ import PhReview from '../assets/images/ph-review.webp';
 import Testimonial from '../components/Testimonial/Testimonial';
 import DP from '../assets/images/0-0.webp';
 import viewOnProduct from '../assets/images/viewOnProduct.jpg';
+import FAQ from '../components/FAQ/FAQ';
+import Footer from '../components/Footer/Footer';
 
 
 const descriptionLists = [
@@ -92,6 +94,17 @@ const testimonialData = [
     userName: 'Bayu Wilanda, Web & App Developer',
     userActionImg: viewOnProduct,
     link: 'https://www.google.com'
+  },
+]
+
+const faqData = [
+  {
+    question: 'Is Afforai free?',
+    answer: 'Yes, Afforai is free for all new users. Upon signing up, users are given 50 permanent credits'
+  },
+  {
+    question: 'What are subscription credits versus permanent credits?',
+    answer: 'Subscription credits come from monthly payments, while permanent credits come from top ups. Subscription credits will be used before permanent credits, and subscription credits expire every month while permanent credits stay.'
   },
 ]
 
@@ -233,7 +246,6 @@ const Home = () => {
         }>
         </ContainerSection>
 
-        
         <ContainerSection childern={
           <>
             <FeatureMediaText 
@@ -325,7 +337,24 @@ const Home = () => {
         }>
         </ContainerSection>
       
+        <ContainerSection childern={
+          <>
+            <SectionHeading 
+              align="center"
+              heading="FAQs"
+              paragraph="For more information, check out our "
+              linkLabel="Help Center"
+              linkUrl="#"
+            />
+
+            <Box sx={{maxWidth: '1264px', margin: '0 auto'}}>
+              <FAQ data={faqData} />
+            </Box>
+          </>
+        }>
+        </ContainerSection>
       
+        <Footer />
       </Box>
     </div>
   )

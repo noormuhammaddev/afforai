@@ -1,14 +1,16 @@
+@import "../../assets/scss/variables.scss";
+
 .testimonial-block {
   width: 600px;
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid $grey-3;
   border-radius: 6px;
   padding: 32px;
 
   .testimonial-msg {
     height: 144px;
-    color: rgb(34, 34, 34);
+    color: $dark;
     font-size: 16px;
-    border-bottom: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid $grey-3;
   }
 
   .testimonial-sender {
@@ -29,7 +31,7 @@
       }
 
       .user-name {
-        color: rgb(82, 82, 82);
+        color: $grey-2;
         font-size: 14px;
       }
     }

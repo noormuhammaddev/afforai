@@ -1,6 +1,8 @@
+@import "../../assets/scss/variables.scss";
+
 .featured-text {
   h2 {
-    color: rgb(34, 34, 34);
+    color: $dark;
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
@@ -8,7 +10,7 @@
   }
 
   p {
-    color: rgb(82, 82, 82);
+    color: $grey-2;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
@@ -21,7 +23,7 @@
       list-style: none;
       display: flex;
       gap: 16px;
-      color: rgb(3, 204, 59);
+      color: $green;
       font-weight: 500;
       align-items: center;
       margin-bottom: 16px;

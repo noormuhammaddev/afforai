@@ -1,3 +1,5 @@
+@import "../../assets/scss/variables.scss";
+
 .section-heading {
   max-width: 556px;
   margin-bottom: 64px !important;
@@ -6,9 +8,9 @@
     margin-bottom: 24px;
     padding: 6px 16px;
     border-radius: 8px;
-    background: rgb(250, 250, 250);
-    border: 2px solid rgb(128, 54, 255);
-    color: rgb(128, 54, 255);
+    background: $grey-4;
+    border: 2px solid $purple;
+    color: $purple;
     font-size: 13px;
     width: fit-content;
     display: flex;
@@ -16,7 +18,7 @@
 
   h2 {
     margin-bottom: 24px;
-    color: rgb(34, 34, 34);
+    color: $dark;
     font-weight: 600;
     font-size: 36px;
     line-height: 130%;
@@ -24,10 +26,15 @@
 
   p {
     max-width: 556px;
-    color: rgb(82, 82, 82);
+    color: $grey-2;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+
+    a {
+      color: rgb(96, 4, 255);
+      text-decoration: underline rgb(96, 4, 255) !important;
+    }
   }
 
   &.center {

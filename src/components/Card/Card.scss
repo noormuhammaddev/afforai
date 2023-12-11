@@ -1,10 +1,12 @@
+@import "../../assets/scss/variables.scss";
+
 .card {
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid $grey-3;
   border-radius: 6px;
 
   .card-img {
-    background-color: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: $dark-2;
+    border-bottom: 1px solid $grey-3;
     border-radius: 6px 6px 0 0;
     overflow: hidden;
     height: 240px;
@@ -21,13 +23,13 @@
     padding: 8px 26px 24px;
     h4 {
       font-size: 16px;
-      color: rgb(34, 34, 34);
+      color: $dark;
       font-weight: 600;
       margin-bottom: 8px;
     }
     p {
       font-size: 12px;
-      color: rgb(82, 82, 82);
+      color: $grey-2;
     }
   }
 }
