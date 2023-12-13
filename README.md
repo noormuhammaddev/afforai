@@ -4,6 +4,7 @@ This is the robust, fully responsive React js based landing page developed as pe
 
 - [Setup](#setup) - Follow these instructions to run the Demo Landing Page.
 - [Features](#features) - Considerations when building a React-based landing page of Afforai.
+- [Preview Live Demo] - [Live Demo](https://6578bd257b0f22008fb299c6--stalwart-pie-57fbe1.netlify.app/)
 
 ## Setup
 
